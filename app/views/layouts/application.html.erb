@@ -5,6 +5,12 @@
     <%= csrf_meta_tags %>
     <%= csp_meta_tag %>
 
+    <meta name="description" content="Fundraising" />
+    <meta name="keywords" content="Bootstrap, 網站, 開發, 程式, 設計, 教學, jquery, HTML, HTML5, CSS, JavaScript, Swift, iOS, Ruby On Rails, Reactjs">
+    <meta name="copyright" content="">
+    <meta name="robots" content="NOINDEX, NOFOLLOW">
+    <meta name="reply-to" content="service@pwdr,tw">
+
     <%= stylesheet_link_tag    'bootstrap_gem', media: 'all' %>
     <%= stylesheet_link_tag    'application', media: 'all' %>
     <%= javascript_include_tag 'application' %>
@@ -12,11 +18,9 @@
 
   <body>
 
-    <%= link_to 'Login' , user_session_path %>
-    <%= link_to 'Logout' , destroy_user_session_path %>
-
-    <p class="notice"><%= notice %></p>
-    <p class="alert"><%= alert %></p>
+    <%= render partial: 'layouts/nav'%>
+    <%= render partial: 'layouts/notice'%>
     <%= yield %>
+    <%= render partial: 'layouts/footer'%>
   </body>
 </html>

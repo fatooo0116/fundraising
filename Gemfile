@@ -32,6 +32,7 @@ gem 'devise-i18n'
 gem 'omniauth-facebook'
 gem 'carrierwave', '~> 1.0'
 gem 'rails_admin'
+gem 'rails_admin-i18n'
 gem 'whenever', :require => false
 gem 'sunspot_rails'
 gem 'sunspot_solr'
